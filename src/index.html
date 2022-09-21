@@ -2,12 +2,185 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>AbmUsers</title>
-  <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <base href="/index.html">
+
+  <! == Relacion a Css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/styles.css">
+
+  <title>Nodos</title>
 </head>
 <body>
+
+
+<! == Encabezado -->
+<header class="container-fluid bg-dark d-flex justify-content-center">
+  <p class="text-light mb-2 p-2 fs-5 ">Bienvenido a Comunidad Nodos</p>
+</header>
+
+<! == Relacion a Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
+
+<!== Menu ==>
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
+  <div class="container-fluid">
+    <a class="navbar-brand"  href="#">
+      <span class="text-secondary fs-5 fw-bold">Menu</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#equipo">Quienes somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#despegables">Donaciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#contenedor-formulario">Contactenos</a>
+        </li>
+      </ul>
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Ingrese su consulta" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<! == Carrousel Slider ==>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="6000">
+      <img src="src/images/box.png" class="d-block w-100" alt="image1">
+    </div>
+    <div class="carousel-item" data-bs-interval="6000">
+      <img src="src/images/handy.png" class="d-block w-100" alt="image2">
+    </div>
+    <div class="carousel-item" data-bs-interval="6000">
+      <img src="src/images/donate.png" class="d-block w-100" alt="image3">
+    </div>
+  </div>
+</div>
+
+<! == Intro ==>
+
+<section class="w-50 mx-auto text-center pt-5 pe-5" id="intro">
+  <h1 class="p-3 fs-4 border-top border-3">
+    Si llegaste a esta página, es porque te interesa saber un poco más sobre nuestra misión y, tal vez, estás pensando en cómo sumarte. Te contamos:
+  <span class="text-secondary">Como participar</span>
+  </h1>
+
+  <p class="p-3 fs-4">Somos una comunidad de personas de las más diversas procedencias unidas por los mismos valores solidarios.
+    Vamos en busca de quien nos necesita, sin preguntar cuál es su creencia religiosa, ideología, nacionalidad, etc.
+    Somos más de 40. 000 voluntarios en 3.500 equipos de trabajo y estamos en todos los rincones del país.
+    Nuestro principal desafío es acercar asistencia, esperanza y oportunidades a quienes están en situación de pobreza, para que logren transformar su realidad.
+    En <span class="text-secondary">DonamosTodo</span>, estamos convencidos por experiencia comprobada que todos tenemos algo para compartir con los demás. Por eso, voluntarios, donantes y equipos de trabajo ofrecemos lo mejor de nosotros para ponerlo al servicio de quienes menos tienen.</p>
+
+</section>
+
+<! == Desplegables ==>
+
+<select class="custom-select mx-middle"  id="desplegables">
+  <option selected>¿Que querés donar?</option>
+  <option value="Ind">Indumentaria</option>
+  <option value=Ali">Alimentos</option>
+  <option value="Din">Dinero</option>
+  <option value="HdT">Horas de trabajo comunitario</option>
+  <option value="MaL">Materiales de Limpieza</option>
+  <option value="MaC">Materiales de construcción</option>
+</select>
+
+<select class="custom-select mx-middle" id="desplegable">
+  <option selected>Provincia</option>
+  <option value="a">Salta</option>
+  <option value="b">Buenos Aires</option>
+  <option value="c">CABA</option>
+  <option value="g">Santiago del Estero</option>
+  <option value="h">Chaco</option>
+  <option value="k">Catamarca</option>
+  <option value="l">La Pampa</option>
+  <option value="m">Mendoza</option>
+  <option value="p">Formosa</option>
+  <option value="q">Neuquén</option>
+  <option value="r">Rio Negro</option>
+  <option value="s">Santa Fé</option>
+  <option value="t">Tucuman</option>
+  <option value="u">Chubut</option>
+  <option value="x">Cordoba</option>
+  <option value="y">Jujuy</option>
+</select>
+
+<! ==Quieres somos? ==>
+<section class="w-75 mx-auto text-center pt-5" id="equipo">
+  <div class="p-3 mb-5 fs-4 border-top border-3">
+    <h1>Equipo pequeño con grandes resultados.</h1>
+    <p class="p-3 fs-4">Cáritas es amor en obras: nuestro servicio y nuestras acciones se inspiran en el amor a Dios y al prójimo. Buscando la verdadera dignificación del hombre, Cáritas se centra en tres momentos claves para llevar adelante su misión:
+    </p>
+  </div>
+  <div class="mt-5 text-center mb-5">
+    <img class="img-fluid" src="src/images/children.png" alt="equipo">
+  </div>
+</section>
+
+<!== Contactenos formulario ==>
+
+<div class="container" id="contenedor-formulario">
+  <div class="titulo-formulario text-center text-c mb-4">
+    <div>
+      <h2>Contactanos</h2>
+      <p>Estamos aqui para ayudar.</p>
+      <img src="src/images/heart.png" alt="contacto" class="img-fluid mt-3 mb-1">
+    </div>
+  </div>
+  <div class="mb-3 mt-3">
+    <label class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido">
+  </div>
+  <div class="mb-3 mt-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+  </div>
+  <div class="mb-3 mt-3">
+    <label for="exampleFormControlTextarea1" class="form-label">¿En que te podemos ayudar?</label>
+    <input class="form-control" id="exampleFormControlTextarea1" placeholder="Escribe tu mensaje.">
+  </div>
+
+</div>
+
+
+
+
+
+<! ==Footer ==>
+
+<footer class="container-fluid bg-dark d-flex justify-content-center pt-3 mt-5">
+  <div class="text-center img-center">
+    <img  src="src/images/logo.png" class="img-fluid d-flex rounded mx-auto d-block" width="100">
+    <div>
+      <p class="card-text align-self-stretch">Esta página fué diseñada por estudiantes de SeniorITty.</p>
+    </div>
+  </div>
+</footer>
+
   <app-root></app-root>
 </body>
 </html>

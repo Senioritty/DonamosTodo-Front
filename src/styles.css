@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display-swap');
+
+body{
+font-family:'Montserrat', sans-serif;
+overflow-x: hidden;
+}
+
+#menu li > a{
+    font-size:18px;
+    font-weight: bold;
+    color: #638c26;
+}
+
+#menu button {
+    font-size:18px;
+    font-weight: bold;
+    color: #638c26;
+}
+.carrousel-inner{
+max-height:39rem;
+}
+
+@media (max-width:768px){
+#intro{width:90% !important}
+}
+
+
+#desplegables{
+    font-size:21px;
+    font-weight: bold;
+    color: #638c26;
+    padding: 20px;
+   margin-left: 300px;
+}
+#desplegable{
+    font-size:21px;
+    font-weight: bold;
+    color: #638c26;
+    padding: 20px;
+}
+
+select{
+value: static;
+position: middle;
+
+align:center
+}
+
+footer{
+    align-items:center;
+    font-size:18px;
+    color: #638c26;
+
+}
