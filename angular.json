@@ -23,7 +23,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss",
+              {
+                "input": "./node_modules/bootstrap/dist/css/bootstrap.css"
+              }
             ],
             "scripts": []
           },
@@ -65,9 +68,8 @@
           "options": {
             "browserTarget": "abmUsers:build",
             "port": 8080,
-            "host":"0.0.0.0",
+            "host": "0.0.0.0",
             "disableHostCheck": true
-           
           },
           "configurations": {
             "production": {
