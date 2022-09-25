@@ -3,17 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UsersComponent } from './users/users.component';
+import { OngsComponent } from './ongs/ongs.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 const routes: Routes = [
-  {path:'users', component:UsersComponent},
-  {path:'', redirectTo:'users', pathMatch:'full'}
+  {path:'ongs', component:OngsComponent},
+  {path:'', redirectTo:'ongs', pathMatch:'full'}
 ];
 @NgModule({
   declarations: [
     AppComponent,
-    UsersComponent
+    OngsComponent
   ],
   imports: [
     BrowserModule,
