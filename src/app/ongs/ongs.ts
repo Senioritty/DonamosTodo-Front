@@ -1,11 +1,10 @@
 export class Ongs {
+    
     id_Ong!: string;
+    provincia!: string;
     nombre!: string;
     direccion!: string;
     cp!: string;
-    id_Prov!: string;
     telefono!: string;
-    id_Don!: string;
+    donacion!: string;
 }
-
-

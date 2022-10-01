@@ -1,13 +1,34 @@
-import { Component, OnInit } from '@angular/core';
-import { Ongs } from './ongs';
-import { OngsService } from './ongs.service';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { SingleOngComponent } from './singleOng/singleOng.component';
+import { ListComponent } from './list/list.component';
+
 
 @Component({
   selector: 'app-ongs',
   templateUrl: './ongs.component.html',
   styleUrls: ['./ongs.component.css']
 })
-export class OngsComponent implements OnInit {
+
+export class OngsComponent {
+  title = "Ejemplo";
+
+  constructor(private router:Router){}
+ 
+  List(){
+    this.router.navigate(["list"]);
+  }
+
+  SingleOng(): void{
+    this.router.navigate(["singleOng"]);
+  }
+
+}
+
+
+
+
+/* export class OngsComponent implements OnInit {
 
   us!: Ongs[];
   use = {
@@ -18,9 +39,11 @@ export class OngsComponent implements OnInit {
     cp:" ",
     telefono:" ",
     id_Don:" ",
-  }
+  };
 
-  constructor(private ongsServicio:OngsService) { }
+  */
+
+/*   constructor(private ongsServicio:OngsService) { }
   
   ngOnInit(): void {
      this.traerOngs();
@@ -30,6 +53,11 @@ export class OngsComponent implements OnInit {
   public traerOngs(){
    this.ongsServicio.obtenerOngs().subscribe(dato =>{this.us = dato}) 
     }
+
+    public obtenerOngs(){
+      this.ongsServicio.obtenerOngs().subscribe(dato =>{this.us = dato}) 
+       }
+
     public modifOngs(us:Ongs){
       if (us.nombre != " "){
        
@@ -55,7 +83,8 @@ export class OngsComponent implements OnInit {
       window.location.reload();
     }
   
-    
+
     
     }
+     */
     

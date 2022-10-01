@@ -1,1 +1,116 @@
-<router-outlet></router-outlet> 
+<!doctype html>
+    <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <base href="/">
+    
+        <title>Comunidad Nodos</title>
+        <link rel="stylesheet" href="app.component.css">
+        
+    
+        <! == Relacion a Css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+              rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+              crossorigin="anonymous">
+    </head>
+
+    <body>
+        <! == Relacion a Js y otros -->
+    
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+            crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+    
+  
+        
+
+        <! == Encabezado -->
+        <header class="container-fluid bg-dark d-flex justify-content-center">
+        <p class="text-light mb-2 p-2 fs-5 ">Bienvenido a Comunidad Nodos</p>
+        </header>
+
+        <app-navbar></app-navbar>
+
+        <app-socialmedia></app-socialmedia>
+
+
+
+        <! == Carrousel Slider ==>
+            <section class="container-fluid mt-5">
+                <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
+                    <div class="carousel-inner justify-content:center align-items:center">
+                        <div class="carousel-item active col-sm-8 " data-bs-interval="3000">
+                            <img src="./assets/box.png" class="d-block mx-auto w-50" alt="image1">
+                        </div>
+                        <div class="carousel-item col-sm-8  " data-bs-interval="3000">
+                            <img src="./assets/handy.png" class="d-block mx-auto w-50" alt="image2">
+                        </div>
+                        <div class="carousel-item col-sm-8" data-bs-interval="3000">
+                            <img src="./assets/donate.png" class="d-block mx-auto w-50" alt="image3">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <! == Desplegables ==>
+
+
+        <! == Botones de busqueda ==>
+
+            <app-ongs></app-ongs>
+
+        <! == Intro ==>
+
+            <section class="w-50 mx-auto text-center pt-5 pe-5" id="intro">
+                <h1 class="p-3 fs-4 border-top border-3">
+                    Si llegaste a esta página, es porque te interesa saber un poco más sobre nuestra misión y, tal vez, estás pensando en cómo sumarte. Te contamos:
+                    <span class="text-secondary">Como participar</span>
+                </h1>
+
+                <p class="p-3 fs-4">Somos una comunidad de personas de las más diversas procedencias unidas por los mismos valores solidarios.
+                Vamos en busca de quien nos necesita, sin preguntar cuál es su creencia religiosa, ideología, nacionalidad, etc.
+                Somos más de 40. 000 voluntarios en 3.500 equipos de trabajo y estamos en todos los rincones del país.
+                Nuestro principal desafío es acercar asistencia, esperanza y oportunidades a quienes están en situación de pobreza, para que logren transformar su realidad.
+                En <span class="text-secondary">ComunidadNodos</span>, estamos convencidos por experiencia comprobada que todos tenemos algo para compartir con los demás. Por eso, voluntarios, donantes y equipos de trabajo ofrecemos lo mejor de nosotros para ponerlo al servicio de quienes menos tienen.</p>
+            </section>
+
+
+        <! ==Quieres somos? ==>
+            <section class="w-75 mx-auto text-center pt-5" id="equipo">
+                <div class="p-3 mb-5 fs-4 border-top border-3">
+                    <h1>Equipo pequeño con grandes resultados.</h1>
+                        <p class="p-3 fs-4">Cáritas es amor en obras: nuestro servicio y nuestras acciones se inspiran en el amor a Dios y al prójimo. Buscando la verdadera dignificación del hombre, Cáritas se centra en tres momentos claves para llevar adelante su misión:
+                        </p>
+                </div>
+                <div class="mt-5 text-center mb-5">
+                        <img class="img-fluid" src="./assets/children.png" alt="equipo">
+                </div>
+            </section>
+
+
+        <! == Contacto ==>
+            <app-contacto></app-contacto>
+
+        <! ==Footer ==>
+            <footer class="container-fluid bg-dark d-flex justify-content-center pt-3 mt-5">
+                <div class="text-center img-center">
+                    <img  src="./assets/logo.png"  class="img-fluid d-flex rounded mx-auto d-block" width="100">
+                    <div>
+                        <p class="card-text align-self-stretch mb-3">Esta página fué diseñada por estudiantes de SeniorITty.</p>
+                    </div>
+                </div>
+            </footer>
+
+    </body>
+</html>

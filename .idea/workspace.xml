@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22e432c9-3bc1-483c-9b40-88831d1b01fb" name="Changes" comment="" />
+    <list default="true" id="22e432c9-3bc1-483c-9b40-88831d1b01fb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ongs/ongs.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ongs/ongs.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ongs/ongs.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ongs/ongs.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ongs/ongs.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ongs/ongs.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ongs/ongs.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ongs/ongs.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ongs/ongs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ongs/ongs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/box.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/box.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/children.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/children.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/donate.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/donate.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/hands.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/hands.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/handy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/handy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/heart.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/spinner.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/spinner.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/box.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/children.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/donate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/hands.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/handy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/spinner.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,21 +44,29 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2EzxySs1NKn8mgXA4piIGwMZCG3" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/myrinaddeo/Desktop/proyecto_social/DonamosTodo/DonamosTodo-Front"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/myrinaddeo/Desktop/proyecto_social/DonamosTodo/DonamosTodo-Front&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/src/app" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

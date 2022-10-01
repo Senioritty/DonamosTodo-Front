@@ -1,19 +1,38 @@
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { Ongs } from './ongs';
-import { HttpClient } from '@angular/common/http';
-//hay que importar import { HttpClientModule } from '@angular/common/http'en el app.module.ts
 //y hay que incluirlo en ls imports:[HttpClientModule]
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Ongs } from './ongs';
+import { HttpClientModule } from '@angular/common/http';
+//import { Observable } from 'rxjs';
+
 @Injectable({
   providedIn: 'root'
 })
-// hay que importar observable, Httpclient y el modelo (users)
+
 export class OngsService {
 
   constructor(private httpClient:HttpClient) { }
   //dirección del back
-  private baseURL="https://donamos-back-senioritty.cleverapps.io/ongs";
-  
+  //private baseURL="https://donamos-back-senioritty.cleverapps.io/ongs";
+   Url= 'http://localhost:8080/ongs';
+   private baseUrl="http://localhost:8080/DonamosTodo/DonamosTodo-Back";
+
+  getOngs(){
+    return this.httpClient.get<Ongs[]>(this.Url);
+  }
+  getList(){
+    return this.httpClient.get<Ongs[]>(`${this.baseUrl}`);
+  }
+  getSingleOng(){
+    return this.httpClient.get<Ongs[]>(`${this.baseUrl}`);
+  }
+
+}
+
+ /*  
+
+ ongs:Ongs[];
+
   ong = {
     id_Ong:" ",
     nombre:" ",
@@ -52,10 +71,4 @@ export class OngsService {
     return this.httpClient.post<Ongs>(`${this.baseURL}`, ongs)
   
   }
-
-}
-
-
-
-
-
+ */

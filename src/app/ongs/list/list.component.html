@@ -1,0 +1,33 @@
+<div class="container text-center">
+    <div class="card">
+    <div class="card-header">
+        <h3>Ongs</h3>
+    </div>
+    <div class="card-body">
+        <table class="table table-haver">
+    <thead>
+    <tr class="text-center">
+        <th>id_Ong</th>
+        <th>Nombre</th>
+        <th>Dirección</th>
+        <th>Código Postal</th>
+        <th>Provincia</th>
+        <th>Teléfono</th>
+        <th>Donación</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let ongs of ongs"  class="text-center">
+    <td>{{ongs.id_Ong}}</td>
+    <td>{{ongs.provincia}}</td>
+    <td>{{ongs.nombre}}</td>
+    <td>{{ongs.direccion}}</td>
+    <td>{{ongs.cp}}</td>
+    <td>{{ongs.telefono}}</td>
+    <td>{{ongs.donacion}}</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    </div>

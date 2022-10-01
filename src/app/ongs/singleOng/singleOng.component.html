@@ -1,0 +1,34 @@
+<div class="input-group mb-3 justify-content-center">
+    <select class="form-select" id="selectBy" aria-label="Example select with button addon">
+      <option selected>Buscar</option>
+      <option value="1">Buscar por Provincia</option>
+      <option value="2">Buscar por Tipo de Donacion</option>
+      <option *ngOnInit="let ong of ongs" value="3">Buscar por Tipo de Id</option>
+      <button class="btn btn-outline-secondary" type="button">Buscar</button>
+    </select>  
+</div>
+
+<div class="card-body">
+  <table class="table table-haver">
+      <thead>
+        <tr class="text-center">
+         <th>id_Ong</th>
+         <th>Nombre</th>
+         <th>Dirección</th>
+          <th>Código Postal</th>
+          <th>Provincia</th>
+          <th>Teléfono</th>
+          <th>Donación</th>
+        </tr>
+      </thead>
+      <tbody>
+        <td>{{ongs.id_Ong}}</td>
+        <td>{{ongs.provincia}}</td>
+        <td>{{ongs.nombre}}</td>
+        <td>{{ongs.direccion}}</td>
+        <td>{{ongs.cp}}</td>
+        <td>{{ongs.telefono}}</td>
+        <td>{{ongs.donacion}}</td>
+      </tbody>
+  </table>
+</div>
