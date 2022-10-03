@@ -1,0 +1,11 @@
+#botones{
+align-items: center !important;
+}
+
+button{
+    top: center !important;
+    align-items: center !important;
+    font-size:21px;
+    font-weight: bold;
+    color: #638c26;
+}

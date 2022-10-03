@@ -1,0 +1,3 @@
+//consultaOngs(ongs:Ongs){
+   
+//    return this.httpClient.post<Ongs>(`${this.altaURL}`, ongs)
