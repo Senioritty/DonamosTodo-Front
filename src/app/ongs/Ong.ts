@@ -1,4 +1,4 @@
-export class Ongs {
+export class Ong {
     
     id_Ong!: string;
     nombre!: string;

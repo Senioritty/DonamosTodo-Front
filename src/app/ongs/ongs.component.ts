@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { SingleOngComponent } from './singleOng/singleOng.component';
 import { ListComponent } from './list/list.component';
+//import { Ongs } from './ongs';
 
 
 @Component({
@@ -11,7 +12,7 @@ import { ListComponent } from './list/list.component';
 })
 
 export class OngsComponent {
-  title = "Ejemplo";
+  title = "DonamosTodo";
 
   constructor(private router:Router){}
  
@@ -23,12 +24,15 @@ export class OngsComponent {
     this.router.navigate(["singleOng"]);
   }
 
-}
 
 
 
+/* 
 
-/* export class OngsComponent implements OnInit {
+export class OngsComponent implements OnInit {
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 
   us!: Ongs[];
   use = {
@@ -41,9 +45,9 @@ export class OngsComponent {
     id_Don:" ",
   };
 
-  */
 
-/*   constructor(private ongsServicio:OngsService) { }
+
+constructor(private ongsServicio:OngsService) { }
   
   ngOnInit(): void {
      this.traerOngs();
@@ -84,7 +88,6 @@ export class OngsComponent {
     }
   
 
-    
-    }
-     */
+    */ 
+}
     

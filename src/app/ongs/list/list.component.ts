@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Ong } from '../Ong';
 import { OngsService } from '../ongs.service';
-import { Ongs } from '../ongs';
+
 
 @Component({
   selector: 'app-list',
@@ -10,16 +11,21 @@ import { Ongs } from '../ongs';
 })
 export class ListComponent implements OnInit {
 
-  ongs!:Ongs[];
+  ongs!: Ong[];
 
   constructor(private service: OngsService, private router:Router ) { }
 
-  ngOnInit(): void {
-this.service.getOngs()
+  ngOnInit() {
+    this.service.getList()
   .subscribe(data=>{
   this.ongs=data;
- })
-
+  })
   }
+
+  List(){
+    this.router.navigate(["list"]);
+  }
+  
+  
 
 }

@@ -11,15 +11,22 @@ import { Ongs } from '../ongs';
 export class SingleOngComponent implements OnInit {
 
   ongs!:Ongs[];
+  use = {
+    provincia:" ",
+  };
 
   constructor(private service: OngsService, private router:Router ) { }
 
-  ngOnInit(): void {
-this.service.getSingleOng()
+  ngOnInit() {
+  this.service.getSingleOng()
   .subscribe(data=>{
   this.ongs=data;
  })
 
+  }
+
+  List(){
+    this.router.navigate(["singleOng"]);
   }
 
 }

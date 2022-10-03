@@ -30,7 +30,7 @@ imports:[
     ReactiveFormsModule
 ],
 
-providers:[],
+providers:[OngsService],
 bootstrap: [AppComponent]
 })
 

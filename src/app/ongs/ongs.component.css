@@ -1,5 +1,8 @@
+#botones{
+align-items: center !important;
+}
+
 button{
-    justify-content: center;
     top: center !important;
     align-items: center !important;
     font-size:21px;

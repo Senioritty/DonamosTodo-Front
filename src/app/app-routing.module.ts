@@ -13,7 +13,7 @@ const routes: Routes = [
 {path:'singleOng', component: SingleOngComponent},
 {path:'ongs', component: OngsComponent},
   //dirección vacía en el navegador hace un redirect a ongs
-{path:'component', redirectTo:"ongs", pathMatch:'full'},
+//{path:'component', redirectTo:"ongs", pathMatch:'full'},
 ];
 
 @NgModule({
