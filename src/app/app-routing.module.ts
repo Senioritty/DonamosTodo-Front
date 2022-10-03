@@ -20,6 +20,7 @@ const routes: Routes = [
 {path:'list', component: ListComponent},
 {path:'singleOng', component: SingleOngComponent},
 {path:'ongs', component: OngsComponent},
+{path: '**', redirectTo: 'ongs', pathMatch:'full'}
   //dirección vacía en el navegador hace un redirect a ongs
 //{path:'component', redirectTo:"ongs", pathMatch:'full'},
 >>>>>>> saveMe

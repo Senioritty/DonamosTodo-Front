@@ -1,43 +1,31 @@
 <div class="container d-flex justify-content-center text-center mt-5 d-grid gap-2 d-md-block">
-
-  
     <div class="card justify-content-center text-center mt-5 d-grid gap-2 d-md-block">
-  <div class="card-header">
-      <h3>Ongs</h3>
+        <div class="card-header">
+            <h3>Ongs</h3>
 
       <! == Desplegables ==>
-<section class="container-fluid d-flex justify-content-center" id="desplegables">
-   <!--  <select class="custom-select-fluid mx-middle"  >
-        <option selected>¿Que querés donar?</option>
-        <option value="Ind">Indumentaria</option>
-        <option value="Ali">Alimentos</option>
-        <option value="Din">Dinero</option>
-        <option value="HdT">Horas de trabajo comunitario</option>
-        <option value="MaL">Materiales de Limpieza</option>
-        <option value="MaC">Materiales de construcción</option>
-    </select> -->
-
-    <select class="form-select" id="desplegable">
-        <option selected>Provincia</option>
-        <option value="provincia.Salta" ngFor="let ong of ongs">Salta</option>
-        <option value="provincia.BuenosAires">Buenos Aires</option>
-        <option value="provincia.CABA">CABA</option>
-        <option value="provincia.SantiagoDelEstero">Santiago del Estero</option>
-        <option value="provincia.Chaco">Chaco</option>
-        <option value="provincia.Catamarca">Catamarca</option>
-        <option value="provincia.LaPampa">La Pampa</option>
-        <option value="provincia.Mendoza">Mendoza</option>
-        <option value="provincia.Formosa">Formosa</option>
-        <option value="provincia.Neuquen">Neuquén</option>
-        <option value="provincia.RioNegro">Rio Negro</option>
-        <option value="provincia.SantaFe">Santa Fé</option>
-        <option value="provincia.Tucuman">Tucuman</option>
-        <option value="provincia.Chubut">Chubut</option>
-        <option value="provincia.Cordoba">Cordoba</option>
-        <option value="provincia.Jujuy">Jujuy</option> -->
-    </select>
-</section>
-
+            
+      <div class="row">
+        <div class="class col">
+            <div class="class form-group">
+                <label for="provinciaElegida"><b>Provincia</b></label>
+                <select class="form-control" name="provinciaElegida" id="provinciaElegida"
+                [(ngModel)]="provinciaElegida" (change)="onChangeProvincia()">
+                <option [ngValue]="null" selected>¿Donde queres donar?</option>
+                <option [ngValue]="provincia" *ngFor="let provincia of provincias">{{ong.provincia}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="class col">
+            <div class="class form-group">
+                <label for="donacionElegida"><b>Tipo de Donación</b></label>
+                <select class="form-control" name="donacionElegida" id="donacionElegida"
+                    [(ngModel)]="donacionElegida" (change)="onChangeDonacion()">
+                    <option [ngValue]="null" selected>¿Que queres donar?</option>
+                    <option [ngValue]="donacion" *ngFor="let donacion of donaciones">{{ong.donacion}}</option>
+                </select>
+            </div>
+        </div>
 
     </div>
 
@@ -55,17 +43,17 @@
   </tr>
   </thead>
   <tbody>
-  <tr *ngFor="let ongs of ongs"  class="text-center">
-  <td>{{ongs.id_Ong}}</td>
-  <td>{{ongs.provincia}}</td>
-  <td>{{ongs.nombre}}</td>
-  <td>{{ongs.direccion}}</td>
-  <td>{{ongs.cp}}</td>
-  <td>{{ongs.telefono}}</td>
-  <td>{{ongs.donacion}}</td>
+  <tr *ngFor="let ong of ongs" class="text-center">
+  <td>{{ong.id_Ong}}</td>
+  <td>{{ong.provincia}}</td>
+  <td>{{ong.nombre}}</td>
+  <td>{{ong.direccion}}</td>
+  <td>{{ong.cp}}</td>
+  <td>{{ong.telefono}}</td>
+  <td>{{ong.donacion}}</td>
   </tr>
   </tbody>
   </table>
   </div>
-  </div>
+  </div> 
   </div>
