@@ -1,4 +1,4 @@
-export class Ongs {
+export class Busqueda{
     id_Ong!: string;
     nombre!: string;
     direccion!: string;
@@ -6,4 +6,4 @@ export class Ongs {
     provincia!: string;
     telefono!: string;
     donacion!: string;
-}
+  }
