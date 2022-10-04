@@ -1,6 +1,6 @@
-<<<<<<< HEAD
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css";
+
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display-swap');
 
 body{
@@ -8,19 +8,61 @@ font-family:'Montserrat', sans-serif;
 overflow-x: hidden;
 }
 
+.navbar {
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  z-index: 99 !important;
+}
+
+.login-box{
+    align-items: right;
+    font-size:14px;
+    color: #638c26;
+
+}
+
+.container-fluid { max-width: 1440px !important; }
+
 #menu li > a{
-    font-size:18px;
+    font-size:16px;
     font-weight: bold;
     color: #638c26;
 }
 
+
+
 #menu button {
-    font-size:18px;
+    font-size:16px;
     font-weight: bold;
     color: #638c26;
 }
+
+
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .carrousel-inner{
 max-height:39rem;
+}
+
+.abs-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.form {
+  width: 450px;
 }
 
 @media (max-width:768px){
@@ -28,25 +70,18 @@ max-height:39rem;
 }
 
 
-#donacion{
-    font-size:21px;
-    font-weight: bold;
-    color: #638c26;
-    padding: 20px;
-   margin-left: 300px;
-}
-#provincia{
-    font-size:21px;
-    font-weight: bold;
-    color: #638c26;
-    padding: 20px;
+.card-columns .card {
+  display: inline-block;
+  width: 100%;
 }
 
-select{
-position: middle;
-align:center
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  }
 
-}
 
 footer{
     align-items:center;
@@ -55,5 +90,3 @@ footer{
 
 }
 
-=======
->>>>>>> saveMe

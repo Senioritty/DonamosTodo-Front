@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display-swap');
 
 body{
@@ -63,10 +63,6 @@ max-height:39rem;
   width: 450px;
 }
 
-@media (max-width:768px){
-#intro{width:90% !important}
-}
-
 
 .card-columns .card {
   display: inline-block;
@@ -80,15 +76,10 @@ max-height:39rem;
   border-top-right-radius: calc(0.25rem - 1px);
   }
 
-select{
-value: static;
-position: middle;
-align:center
-}
-
 footer{
     align-items:center;
     font-size:18px;
     color: #638c26;
 
 }
+

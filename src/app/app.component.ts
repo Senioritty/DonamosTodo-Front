@@ -1,8 +1,6 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { ListComponent } from './ongs/list/list.component';
-import { OngsComponent } from './ongs/ongs.component';
-//import {DomSanitizer} from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-root',
@@ -10,21 +8,16 @@ import { OngsComponent } from './ongs/ongs.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'abmUsers';
+  title = 'DT-Front';
 
-constructor(private router:Router){}
+  constructor(private router:Router){}
 
-List(){
-  this.router.navigate(["list"]);
+Listar(){
+  this.router.navigate(["listar"]);
 }
 
-singleOng(){
-  this.router.navigate(["singleOng"]);
+seleccionar(){
+  this.router.navigate(["seleccionar"]);
 }
-
-  //cssUrl: string;
-  //constructor(public sanitizer: DomSanitizer){
-  //this.cssUrl ='./ong/ong.component.ts';}
-
 
 }

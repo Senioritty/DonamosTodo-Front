@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/DonamosTodo-Front.iml" filepath="$PROJECT_DIR$/.idea/DonamosTodo-Front.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DT-Front.iml" filepath="$PROJECT_DIR$/.idea/DT-Front.iml" />
     </modules>
   </component>
 </project>

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "abmUsers": {
+    "DT-Front": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/abm-users",
+            "outputPath": "dist/dt-front",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,10 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              {
-                "input": "./node_modules/bootstrap/dist/css/bootstrap.css"
-              }
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -65,19 +62,12 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "abmUsers:build",
-            "port": 8080,
-            "host": "0.0.0.0",
-
-            "disableHostCheck": true
-          },
           "configurations": {
             "production": {
-              "browserTarget": "abmUsers:build:production"
+              "browserTarget": "DT-Front:build:production"
             },
             "development": {
-              "browserTarget": "abmUsers:build:development"
+              "browserTarget": "DT-Front:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -85,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "abmUsers:build"
+            "browserTarget": "DT-Front:build"
           }
         },
         "test": {
@@ -107,8 +97,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": false
   }
 }
