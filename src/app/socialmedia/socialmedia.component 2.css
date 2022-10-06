@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display-swap');
+
+section {
+                top: center !important;
+              align-items: center !important;
+               margin: auto;
+               font-size: 6px !important;
+               color: #638c26 !important;
+
+}
+
+
+table.table-center {
+  width: auto;
+  margin: 0 auto;
+}
+
+.thread{
+padding-left: 6 !important;
+}
