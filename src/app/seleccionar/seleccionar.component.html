@@ -1,27 +1,29 @@
 
-<app-navbar></app-navbar>
+        <app-navbar></app-navbar>
 
-<app-ongs></app-ongs>
+        <app-ongs></app-ongs>
  
+
+
  <div class="container d-flex justify-content-center text-center mt-5 d-grid gap-2 d-md-block">
     <div class="card justify-content-center text-center mt-5 d-grid gap-2 d-md-block">
-        <div class="card-header">
+            <div class="card-header">
                 <h3>Ongs</h3>
             </div>
 
-            <!-- Desplegables --> 
-    
-      <div class="row">
-        <div class="class col">
-            <div class="class form-group">
-                <label for="provincia"><b>Provincia</b></label>
-                <select class="form-control" name="provincia" id="provinciaElegida">
-                <option [ngValue]="null" selected>¿Donde queres donar?</option>
-                <option [ngValue]="ong.provincia" *ngFor="let ong of ongs">{{ong.provincia}}</option>
+ <!-- Desplegables --> 
+            <div >
+            <form formControlName="provincia">
+                <label><b>Provincia</b></label>
+                <select ngModel="provSeleccionada" (change)="seleccionar()">
+                 <option value="null" selected>¿Donde queres donar?</option>
+                 <option *ngFor="let prov of provincias">{{prov}}</option>
                 </select>
-            </div>
-        </div>
-        <div class="class col">
+                <p [hidden]="provSeleccionada == '0'">En {{verSeleccion}}, están estos centros:</p>
+            </form>
+            </div> 
+       
+       <!--  <div class="class col">
             <div class="class form-group">
                 <label for="donacion"><b>Tipo de Donación</b></label>
                 <select class="form-control" name="donacion" id="donacion">
@@ -31,10 +33,8 @@
                 </select>
             </div>
         </div>
-
+        
     </div>
-
-<!--Encabezado de la tabla-->
 
    <div class="card-body">
       <table class="table table-haver">
@@ -62,5 +62,8 @@
   </tbody>
   </table>
   </div>
-  </div> 
-  </div>
+   --> 
+  
+
+ </div>
+

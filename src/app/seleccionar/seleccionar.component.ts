@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { NgModelGroup } from '@angular/forms';
 import { Ongs } from 'src/app/ongs/ongs';
 import { OngsService } from 'src/app/ongs/ongs.service';
 
@@ -9,84 +11,25 @@ import { OngsService } from 'src/app/ongs/ongs.service';
   templateUrl: './seleccionar.component.html',
   styleUrls: ['./seleccionar.component.css']
 })
-export class SeleccionarComponent implements OnInit {
- 
- ongs!: Ongs[];
- 
-  //Ongs: any[] = [];
-  provincias: any[] = [];
-  donaciones: any[] = [];
-  /*provinciaElegida: any = null;
-  donacionElegida: any =null; */
+export class SeleccionarComponent {
 
-   ong: Ongs = {
-    id_Ong:'',
-    nombre:'',
-    direccion:'',
-    cp:'',
-    provincia:'',
-    telefono:'',
-    donacion:'',
-  };
-  
-  
-  
 
-  constructor(private ongservice: OngsService, private router:Router ) { }
+  provincias;
+  provSeleccionada: string = '0';
+  verSeleccion:String = '';
 
-  ngOnInit() {
-    this.ongservice.getListar()
-    .subscribe(data=>{
-    this.ongs=data;
-    });
 
-    /* this.listaDonacion();
-    this.listaProvincia();  */
-
+  constructor(){
+    this.provincias =  ['CABA','Catamarca','Chaco','Chubut',
+    'Formosa','Jujuy','La Pampa','Mendoza','Neuquen','Tucuman',
+    'Rio Negro','Salta','Santa Fe','Santiago del Estero'];
   }
 
-  Listar(){
-    this.router.navigate(["listar"]);
-  }
-
-  /* listaProvincia():void{
-  this.ongservice.provincias(this.ongs).subscribe((data: any[]) =>{
-    this.provincias=data;
-  },
-    (    err: any) => {
-      console.log(err);
-    }
-  );
-  }
-
-  listaDonacion() : void{
-  this.ongservice.donaciones(this.ongs).subscribe((data: any[])=>{
-    this.donaciones=data;
-  },
-    (err: any) => {
-  console.log(err);
-    }
-  );
-  }
- */
- /* onChangeDonacion(): void {
-if(this.donacionElegida){
-  this.donaciones = this.donacionElegida.ongs;
-}else{
-  this.donaciones = '' ;
-}
-this.listaDonacion();
+seleccionar(){
+this.verSeleccion=this.provSeleccionada;
 }
 
-onChangeProvincia(): void {
-  if(this.provinciaElegida){
-    this.provincias = this.provinciaElegida;
-  }else{
-    this.provincias = '';
-  }
-  this.listaProvincia();
-  }
-  */
-  
+ongs!: Ongs[];
 
+  
 }
