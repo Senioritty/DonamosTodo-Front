@@ -26,10 +26,10 @@ export class OngsService {
 
 
   getListar(){
-    return this.httpClient.get<Ongs[]>('http://localhost:8080/ongs/listar');
+    return this.httpClient.get<Ongs[]>('https://donamos-back-senioritty.cleverapps.io/ongs/listar');
   } 
   getSeleccionar(){
-   return this.httpClient.get<Ongs[]>('http://localhost:8080/ongs/listar');
+   return this.httpClient.get<Ongs[]>('https://donamos-back-senioritty.cleverapps.io/ongs/seleccionar');
   }
   //obtenerOngs():Observable<Ongs[]>{
   // return this.httpClient.get<Ongs[]>(`${this.baseUrl}`);

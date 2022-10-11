@@ -10,6 +10,11 @@ import { OngsService } from 'src/app/ongs/ongs.service';
   styleUrls: ['./seleccionar.component.css']
 })
 export class SeleccionarComponent implements OnInit {
+provSeleccionada: any;
+verSeleccion: any;
+seleccionar() {
+throw new Error('Method not implemented.');
+}
  
  ongs!: Ongs[];
  
